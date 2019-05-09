@@ -48,6 +48,10 @@ ThemeableBrowser.prototype = {
         exec(null, null, 'ThemeableBrowser', 'show', []);
         return this;
     },
+	hide: function (eventname) {
+        exec(null, null, 'ThemeableBrowser', 'hide', []);
+        return this;
+    },
     reload: function (eventname) {
         exec(null, null, 'ThemeableBrowser', 'reload', []);
         return this;

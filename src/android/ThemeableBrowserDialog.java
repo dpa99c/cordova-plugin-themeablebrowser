@@ -51,11 +51,23 @@ public class ThemeableBrowserDialog extends Dialog {
         } else {
             // better to go through in themeableBrowser because it does a clean
             // up
-            if (this.hardwareBack && this.themeableBrowser.canGoBack()) {
-                this.themeableBrowser.goBack();
-            }  else {
+            //if (this.hardwareBack && this.themeableBrowser.canGoBack()) {
+            //    this.themeableBrowser.goBack();
+            //}  else {
                 this.themeableBrowser.closeDialog();
-            }
+            //}
         }
     }
+	/*
+	public void onPageFinished(WebView view, String url) {
+        this.themeableBrowser.closeDialog();
+    }
+	
+	public void onPageStarted(WebView view, String url, Bitmap favicon)
+	{
+		if (url.startsWith("hackCloseWindowFrame")) {			
+			this.themeableBrowser.closeDialog();
+		}		
+	}*/
+	
 }
